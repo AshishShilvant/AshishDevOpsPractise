@@ -28,7 +28,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Path'
-    mavenDirectory: 'C:\Program Files\apache-maven-3.9.5\bin'
+    mavenDirectory: 'C:\Program Files\apache-maven-3.9.5'
     mavenSetM2Home: true
     mavenAuthenticateFeed: false
     effectivePomSkip: false
