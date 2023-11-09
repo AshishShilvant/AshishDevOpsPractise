@@ -20,16 +20,18 @@ pool: my-personal-computer
 #     testResultsFiles: '**/surefire-reports/TEST-*.xml'
 #     goals: 'package'
 
+
 steps:
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
+    javaHomeOption: 'Path'
+    jdkDirectory: 'C:\Program Files\Java\jdk-1.8'
     mavenVersionOption: 'Path'
     mavenDirectory: 'C:\Program Files\apache-maven-3.9.5'
-    mavenSetM2Home: true
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+   
